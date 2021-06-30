@@ -4,7 +4,7 @@ import { StatusBar } from 'react-native';
 
 import Navigation from './Navigation';
 
-export default function App() {
+export default function Main() {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#000"/>

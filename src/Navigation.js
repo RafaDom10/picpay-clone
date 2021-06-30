@@ -32,11 +32,12 @@ const icons = {
 export default function Navigation() {
   return (
     <Tab.Navigator
+      initialRouteName="Home"
       screenOptions={({ route, navigation }) => ({
         tabBarIcon: ({ color, size, focused }) => {
           if (route.name === 'Pay') {
             return (
-              <PayButton 
+              <PayButton
                 onPress={() => navigation.navigate('Pay')}
                 focused={focused}
               />
