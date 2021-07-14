@@ -1,12 +1,14 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { AntDesign, Ionicons } from '@expo/vector-icons';
+import { AntDesign, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 
 import PayButton from './components/PayButton';
 
 import HomeScreen from './screens/Home';
 import WalletScreen from './screens/Wallet';
 import PayScreen from './screens/Pay';
+import NotificationsScreen from './screens/Notifications';
+import StoreScreen from './screens/Store';
 
 const Tab = createBottomTabNavigator();
 
@@ -16,16 +18,16 @@ const icons = {
     name: 'home',
   },
   Wallet: {
-    lib: AntDesign,
-    name: 'creditcard',
+    lib: Ionicons,
+    name: 'wallet-outline',
   },
   Notifications: {
     lib: Ionicons,
     name: 'ios-notifications-outline',
   },
-  Settings: {
-    lib: AntDesign,
-    name: 'setting',
+  Store: {
+    lib: MaterialCommunityIcons,
+    name: 'shopping-outline',
   },
 };
 
@@ -74,22 +76,22 @@ export default function Navigation() {
         name="Pay"
         component={PayScreen}
         options={{
-          title: '',
+          title: 'Pagar',
         }}
       />
 
       <Tab.Screen
         name="Notifications"
-        component={PayScreen}
+        component={NotificationsScreen}
         options={{
           title: 'Notificações',
         }}
       />
       <Tab.Screen
-        name="Settings"
-        component={PayScreen}
+        name="Store"
+        component={StoreScreen}
         options={{
-          title: 'Ajustes',
+          title: 'Store',
         }}
       />
     </Tab.Navigator>

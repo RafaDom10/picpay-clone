@@ -11,7 +11,7 @@ export default function PayButton({ onPress, focused }) {
         colors={
           focused
             ? ['#fff', '#ccc']
-            : ['#00fc6c', '#00ac4a']
+            : ['#53AD4B', '#53AD4B']
         }
         start={[1, 0.2]}
       >
@@ -20,7 +20,7 @@ export default function PayButton({ onPress, focused }) {
           size={30}
           color={focused ? '#000' : '#fff'}
         />
-        <Label focused={focused}>Pagar</Label>
+        {/* <Label focused={focused}>Pagar</Label> */}
       </Button>
     </TouchableWithoutFeedback>
   );

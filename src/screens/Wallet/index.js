@@ -87,6 +87,11 @@ export default function Wallet() {
               <FontAwesome name="bank" size={20} color="#fff"/>
               <ActionLabel>Retirar</ActionLabel>
             </Action>
+            <Action>
+              <FontAwesome name="bank" size={20} color="#fff"/>
+              <ActionLabel>Retirar</ActionLabel>
+            </Action>
+
           </Actions>
         </HeaderContainer>
       </Header>
